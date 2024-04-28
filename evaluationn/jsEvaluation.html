@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+</body>
+</html>
+<script>
+
+    let topHeading=document.createElement("h1")
+    topHeading.innerHTML="Employee Management System"
+    document.body.append(topHeading)
+    topHeading.style.textAlign="center"
+
+    // all i will put in a div from here
+
+    let Adiv=document.createElement("div")
+    document.body.append(Adiv)
+
+    Adiv.style.display="flex"
+
+
+
+    
+
+    let Ptext=document.createElement("p")
+    Ptext.innerHTML="Filter by department:"
+    Adiv.append(Ptext)
+    let selectDepartment=document.createElement("select")
+    selectDepartment.innerHTML="Select Department"
+    Adiv.append(selectDepartment)
+
+    selectDepartment.style.width="130px"
+    selectDepartment.style.height="30px"
+    selectDepartment.style.marginTop="10px"
+
+    let options=document.createElement("option")
+    options.innerHTML="Select Department"
+    selectDepartment.append(options)
+
+    let option1=document.createElement("option")
+    option1.innerHTML="Operations"
+    selectDepartment.append(option1)
+
+
+    let option2=document.createElement("option")
+    option2.innerHTML="hr"
+    selectDepartment.append(option2)
+
+    
+    let option3=document.createElement("option")
+    option3.innerHTML="finance"
+    selectDepartment.append(option3)
+    
+    let option4=document.createElement("option")
+    option4.innerHTML="engineering"
+    selectDepartment.append(option4)
+
+    //from here gender start  
+
+    let Ptext2=document.createElement("p")
+    Ptext2.innerHTML="Filter by Gender:"
+    Adiv.append(Ptext2)
+    let gender=document.createElement("select")
+    gender.innerHTML="Select Department"
+    Adiv.append(gender)
+    
+    gender.style.width="60px"
+    gender.style.height="30px"
+    gender.style.marginTop="10px"
+
+
+
+
+    let Goption2=document.createElement("option")
+    Goption2.innerHTML="Male"
+    gender.append(Goption2)
+
+    let Goption=document.createElement("option")
+    Goption.innerHTML="Female"
+    gender.append(Goption)
+
+
+    // here i have salary department
+
+    let Ptext3=document.createElement("p")
+    Ptext3.innerHTML="Sort by Salary :"
+    Adiv.append(Ptext3)
+    let salary=document.createElement("select")
+    salary.innerHTML="Select Department"
+    Adiv.append(salary)
+
+    salary.style.width="100px"
+    salary.style.height="30px"
+    salary.style.marginTop="10px"
+
+    let Soption=document.createElement("option")
+    Soption.textContent="Low to high"
+    salary.append(Soption)
+
+    let Soption2=document.createElement("option")
+    Soption2.textContent="High to low"
+    salary.append(Soption2)
+
+
+// top parts end here
+
+
+let Bdiv=document.createElement("div")
+document.body.append(Bdiv)
+
+let Bighead=document.createElement("table")
+Bighead.innerHTML=""
+Bdiv.append(Bighead)
+
+
+
+let Bbody=document.createElement("thead")
+Bbody.innerHTML="S.no"
+Bighead.append(Bbody)
+
+
+let Bbody2=document.createElement("thead")
+Bbody2.innerHTML="Name"
+Bighead.append(Bbody2)
+
+
+
+    
+
+
+</script>
